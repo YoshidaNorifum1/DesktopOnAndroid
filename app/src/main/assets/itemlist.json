@@ -1,0 +1,13 @@
+{
+  "apps": [
+    {
+      "name": "test1",
+      "packageName": "com.android.settings",
+      "topMargin": 500,
+      "leftMargin": 700
+    }
+  ],
+  "others": [
+
+  ]
+}
