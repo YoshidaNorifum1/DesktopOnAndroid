@@ -1,4 +1,4 @@
-package com.example.DesktopOnAndroid
+package com.yoshinori.DesktopOnAndroid
 
 import android.content.Context
 import android.view.LayoutInflater

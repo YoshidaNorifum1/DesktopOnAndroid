@@ -52,6 +52,12 @@
       </list>
     </option>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="EXPORT_PRIVATE_KEY" value="false" />
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/googleKeyStore" />
+    <option name="KEY_ALIAS" value="desktoponandroid" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -63,8 +69,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="BundleExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="QV712AJ91K" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-10T11:31:33.289Z" />
+    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
+    <property name="ExportApk.BuildVariants" value="release" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -163,22 +172,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="413" y="101" key="#app/0.23.1440.877@0.23.1440.877" timestamp="1610358323980" />
-    <state width="1398" height="684" key="GridCell.Tab.0.bottom" timestamp="1610527079782">
+    <state width="1398" height="684" key="GridCell.Tab.0.bottom" timestamp="1610547961746">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610527079782" />
-    <state width="1398" height="684" key="GridCell.Tab.0.center" timestamp="1610527079781">
+    <state width="1398" height="684" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610547961746" />
+    <state width="1398" height="684" key="GridCell.Tab.0.center" timestamp="1610547961746">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610527079781" />
-    <state width="1398" height="684" key="GridCell.Tab.0.left" timestamp="1610527079780">
+    <state width="1398" height="684" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610547961746" />
+    <state width="1398" height="684" key="GridCell.Tab.0.left" timestamp="1610547961745">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610527079780" />
-    <state width="1398" height="684" key="GridCell.Tab.0.right" timestamp="1610527079781">
+    <state width="1398" height="684" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610547961745" />
+    <state width="1398" height="684" key="GridCell.Tab.0.right" timestamp="1610547961746">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610527079781" />
+    <state width="1398" height="684" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610547961746" />
     <state x="100" y="123" width="1240" height="677" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1610202592379">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -187,13 +196,13 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="390" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1610282185026" />
-    <state x="294" y="49" width="852" height="825" key="find.popup" timestamp="1610358366095">
+    <state x="294" y="49" width="1069" height="825" key="find.popup" timestamp="1610542474175">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="294" y="49" width="852" height="825" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1610358366095" />
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1610528430468">
+    <state x="294" y="49" width="1069" height="825" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1610542474175" />
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1610547967175">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1610528430468" />
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1610547967175" />
   </component>
 </project>

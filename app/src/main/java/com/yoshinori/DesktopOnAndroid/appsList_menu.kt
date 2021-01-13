@@ -1,4 +1,4 @@
-package com.example.DesktopOnAndroid
+package com.yoshinori.DesktopOnAndroid
 
 import android.app.Activity
 import android.content.Intent
@@ -52,7 +52,7 @@ class AppsList_menu : AppCompatActivity() {
             intent.putExtra(APP_PACKAGENAME,item.packageName)
             setResult(Activity.RESULT_OK,intent)
             finish()
-            //val intent = pm.getLaunchIntentForPackage("com.example.DesktopOnAndroid")
+            //val intent = pm.getLaunchIntentForPackage("com.yoshinori.DesktopOnAndroid")
             //startActivity(intent)
         }
 

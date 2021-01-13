@@ -1,14 +1,12 @@
-package com.example.DesktopOnAndroid
+package com.yoshinori.DesktopOnAndroid
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.graphics.Point
 import android.graphics.drawable.Drawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import android.widget.*
 import androidx.annotation.RequiresApi
@@ -19,8 +17,8 @@ import kotlinx.coroutines.*
 import java.lang.Exception
 import kotlin.coroutines.CoroutineContext
 
-const val APP_NAME = "com.example.DesktopOnAndroid.APP_NAME"
-const val APP_PACKAGENAME = "com.example.DesktopOnAndroid.APP_PACKAGENAME"
+const val APP_NAME = "com.yoshinori.DesktopOnAndroid.APP_NAME"
+const val APP_PACKAGENAME = "com.yoshinori.DesktopOnAndroid.APP_PACKAGENAME"
 
 var contextX : Float = 0F
 var contextY : Float = 0F
@@ -199,22 +197,24 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
                 if(view.id == R.id.Main_ConstraintLayout){
                 }else{
                     val constraintLayout = findViewById<ConstraintLayout>(R.id.Main_ConstraintLayout)
+                    val disp_ratio = 0.1
+                    val scroll_ratio = 0.033
 
-                    if(dispsize.x - newX < dispsize.x / 10){
-                        constraintLayout.scrollX += dispsize.x / 30
-                        preX -= dispsize.x / 30
+                    if(dispsize.x - newX < dispsize.x * disp_ratio){
+                        constraintLayout.scrollX += (dispsize.x * scroll_ratio).toInt()
+                        preX -= (dispsize.x * scroll_ratio).toInt()
                     }
-                    if(newX < dispsize.x / 10){
-                        constraintLayout.scrollX -= dispsize.x / 30
-                        preX += dispsize.x / 30
+                    if(newX < dispsize.x * disp_ratio){
+                        constraintLayout.scrollX -= (dispsize.x * scroll_ratio).toInt()
+                        preX += (dispsize.x * scroll_ratio).toInt()
                     }
-                    if(dispsize.y - newY < dispsize.y / 10){
-                        constraintLayout.scrollY += dispsize.y / 30
-                        preY -= dispsize.y / 30
+                    if(dispsize.y - newY < dispsize.y * disp_ratio){
+                        constraintLayout.scrollY += (dispsize.y * scroll_ratio).toInt()
+                        preY -= (dispsize.y * scroll_ratio).toInt()
                     }
-                    if(newY < dispsize.y / 10){
-                        constraintLayout.scrollY -= dispsize.y / 30
-                        preY += dispsize.y / 30
+                    if(newY < dispsize.y * disp_ratio){
+                        constraintLayout.scrollY -= (dispsize.y * scroll_ratio).toInt()
+                        preY += (dispsize.y * scroll_ratio).toInt()
                     }
 
                     val x = (view.left + newX - preX).toInt()

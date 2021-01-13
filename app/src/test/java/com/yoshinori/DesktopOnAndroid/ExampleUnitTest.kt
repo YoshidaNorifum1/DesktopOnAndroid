@@ -1,4 +1,4 @@
-package com.example.DesktopOnAndroid
+package com.yoshinori.DesktopOnAndroid
 
 import org.junit.Test
 

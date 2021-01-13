@@ -1,4 +1,4 @@
-package com.example.DesktopOnAndroid
+package com.yoshinori.DesktopOnAndroid
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
