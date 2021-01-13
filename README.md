@@ -26,8 +26,6 @@
 - Kotlin(Room/Kotlin Coroutin)
 
 ## 課題・今後実装したい機能
-- SimpleGestureListnerクラスを実装してOverrideしたOnLongPressとOnScrollの挙動が現在不安定なため、アイコンをMOVEした際ContextMenuが意図外に表示されたり、View全体が小刻みに振動する問題があります。
-OnTouchメソッドとOntouchEventメソッドへのEventの伝搬が原因ではないかと考えているのですが、現在調査中です。
 - ウィジェットへのサポート
 - 詳細設定(アイコンの大きさ・起動直後の始点座標の設定等）のサポート
 - アプリ一覧選択画面の中間一致による絞り込み機能の実装

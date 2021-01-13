@@ -28,6 +28,12 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
     var preX : Float = 0F
     var preY : Float = 0F
 
+    enum class move_statuses{
+        childViewMoving,
+        childViewStop
+    }
+    var move_status = move_statuses.childViewStop
+
     lateinit var db :AppDatabase
     lateinit var appDoa : AppsDoa
     lateinit var dispsize : Point
@@ -196,6 +202,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
                 view.parent.requestDisallowInterceptTouchEvent(true)
                 if(view.id == R.id.Main_ConstraintLayout){
                 }else{
+                    move_status = move_statuses.childViewMoving
                     val constraintLayout = findViewById<ConstraintLayout>(R.id.Main_ConstraintLayout)
                     val disp_ratio = 0.1
                     val scroll_ratio = 0.033
@@ -223,6 +230,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
                 }
             }
             MotionEvent.ACTION_UP->{
+                move_status = move_statuses.childViewStop
                 if(view.id != R.id.Main_ConstraintLayout){
                     view.setOnTouchListener(null)
                     async(Dispatchers.IO) {
@@ -235,7 +243,7 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
         }
         preX = newX
         preY = newY
-        return onTouchEvent(event)
+        return mDetector.onTouchEvent(event)
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
@@ -262,9 +270,11 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
         }
 
         override fun onScroll( e1: MotionEvent, e2: MotionEvent, dX: Float, dY: Float ): Boolean {
-            val view = findViewById<ConstraintLayout>(R.id.Main_ConstraintLayout)
-            view.scrollX += dX.toInt()
-            view.scrollY += dY.toInt()
+            if (move_status == move_statuses.childViewStop){
+                val view = findViewById<ConstraintLayout>(R.id.Main_ConstraintLayout)
+                view.scrollX += dX.toInt()
+                view.scrollY += dY.toInt()
+            }
 
             return true
         }
