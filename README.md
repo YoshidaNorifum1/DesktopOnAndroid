@@ -12,6 +12,10 @@
 ストアに公開するに当たり、本家よりも便利なものにするのが目標です。
 
 ## DEMO
+![64b8d1b5142d3f918bddf7d426eb0e51](https://user-images.githubusercontent.com/62142890/104445359-60323000-55dc-11eb-82c2-4ac4e11b1d6e.gif)
+![5b2eaa8e759da29ee128b80d25eb927f](https://user-images.githubusercontent.com/62142890/104445384-658f7a80-55dc-11eb-95ef-a9ccf30cf367.gif)
+![fd319f09128f6d83d4cf15fbad5ed836](https://user-images.githubusercontent.com/62142890/104445413-6e804c00-55dc-11eb-9b05-080edfc45d02.gif)
+![28dac98ddf4041a1804289bcbf659fb5](https://user-images.githubusercontent.com/62142890/104445607-a25b7180-55dc-11eb-8dc9-7283a07334bb.gif)
 
 ## 工夫したポイント
 - ScrollViewで直接サポートされていない斜めスクロールDiagonalScrollを実現するため、Viewのスクロール動作はOnTouchメソッド及びSimpleGestureListenerクラスのメソッドをOverrideし自前で実装してあります。
@@ -23,8 +27,7 @@
 
 ## 課題・今後実装したい機能
 - SimpleGestureListnerクラスを実装してOverrideしたOnLongPressとOnScrollの挙動が現在不安定なため、アイコンをMOVEした際ContextMenuが意図外に表示されたり、View全体が小刻みに振動する問題があります。
-OnTouchメソッドとOntouchEventメソッド
-- 新しいアイコンをAddする際、本来期待される挙動はLongPressした位置にアイコンが表示されることですが、現在正常に動作していません。
+OnTouchメソッドとOntouchEventメソッドへのEventの伝搬が原因ではないかと考えているのですが、現在調査中です。
 - ウィジェットへのサポート
 - 詳細設定(アイコンの大きさ・起動直後の始点座標の設定等）のサポート
 - アプリ一覧選択画面の中間一致による絞り込み機能の実装
