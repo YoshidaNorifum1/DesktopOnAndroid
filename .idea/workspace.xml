@@ -27,7 +27,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DesktopOnAndroid" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -158,22 +163,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="413" y="101" key="#app/0.23.1440.877@0.23.1440.877" timestamp="1610358323980" />
-    <state width="1398" height="684" key="GridCell.Tab.0.bottom" timestamp="1610351101443">
+    <state width="1398" height="684" key="GridCell.Tab.0.bottom" timestamp="1610527079782">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610351101443" />
-    <state width="1398" height="684" key="GridCell.Tab.0.center" timestamp="1610351101442">
+    <state width="1398" height="684" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610527079782" />
+    <state width="1398" height="684" key="GridCell.Tab.0.center" timestamp="1610527079781">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610351101442" />
-    <state width="1398" height="684" key="GridCell.Tab.0.left" timestamp="1610351101442">
+    <state width="1398" height="684" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610527079781" />
+    <state width="1398" height="684" key="GridCell.Tab.0.left" timestamp="1610527079780">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610351101442" />
-    <state width="1398" height="684" key="GridCell.Tab.0.right" timestamp="1610351101442">
+    <state width="1398" height="684" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610527079780" />
+    <state width="1398" height="684" key="GridCell.Tab.0.right" timestamp="1610527079781">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="684" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610351101442" />
+    <state width="1398" height="684" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610527079781" />
     <state x="100" y="123" width="1240" height="677" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1610202592379">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -186,9 +191,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="294" y="49" width="852" height="825" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1610358366095" />
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1610374044715">
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup" timestamp="1610528430468">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1610374044715" />
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1610528430468" />
   </component>
 </project>

@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
                     } }
                     val imageview = findViewById<ImageView>(v.id)
                     imageview.setImageDrawable(null)
-                    refresh()
                     true
                 }
             }
@@ -133,10 +132,9 @@ class MainActivity : AppCompatActivity(), View.OnTouchListener, CoroutineScope{
                     val marginLeft = contextX.toInt()
                     val marginTop = contextY.toInt()
 
-                    launch {
-                        withContext(Dispatchers.IO) {
-                            appDoa.insert(Apps(0, appName, appPackageName, marginTop, marginLeft))
-                        }
+                    runBlocking { async { withContext(Dispatchers.IO) {
+                                appDoa.insert(Apps(0, appName, appPackageName, marginTop, marginLeft))
+                            } }.await()
                     }
                     refresh()
                 }
